@@ -1,0 +1,1 @@
+/ucrt64/bin/c++.exe -Wl,--enable-auto-import CMakeFiles/geometry_test.dir/geometry_test.cc.o CMakeFiles/geometry_test.dir/math.cc.o CMakeFiles/geometry_test.dir/geometry.cc.o CMakeFiles/geometry_test.dir/raytracer.cc.o -o geometry_test.exe -Wl,--out-implib,libgeometry_test.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lgtest -lgtest_main

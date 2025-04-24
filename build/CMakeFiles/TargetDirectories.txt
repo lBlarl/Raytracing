@@ -1,0 +1,4 @@
+/c/Users/cgerl/OneDrive/HKA/SS25/Computergrafik/Labor/Aufgabe 2/build/CMakeFiles/math_test.dir
+/c/Users/cgerl/OneDrive/HKA/SS25/Computergrafik/Labor/Aufgabe 2/build/CMakeFiles/geometry_test.dir
+/c/Users/cgerl/OneDrive/HKA/SS25/Computergrafik/Labor/Aufgabe 2/build/CMakeFiles/edit_cache.dir
+/c/Users/cgerl/OneDrive/HKA/SS25/Computergrafik/Labor/Aufgabe 2/build/CMakeFiles/rebuild_cache.dir

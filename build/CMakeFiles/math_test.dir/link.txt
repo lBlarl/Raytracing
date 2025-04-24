@@ -1,0 +1,1 @@
+/ucrt64/bin/c++.exe -Wl,--enable-auto-import CMakeFiles/math_test.dir/math_test.cc.o CMakeFiles/math_test.dir/math.cc.o -o math_test.exe -Wl,--out-implib,libmath_test.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lgtest -lgtest_main
