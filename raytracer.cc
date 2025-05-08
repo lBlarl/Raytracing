@@ -30,7 +30,7 @@ void screen() {
       std::clog << "\rScanlines remaining: " << (image_height - j) << ' ' << std::flush;
         for (int i = 0; i < image_width; i++) {
 
-            auto r = double(i) / (image_width-1);
+            /*auto r = double(i) / (image_width-1);
             auto g = double(j) / (image_height-1);
             auto b = 0.0;
 
@@ -39,6 +39,10 @@ void screen() {
             int ib = int(255.999 * b);
 
             std::cout << ir << ' ' << ig << ' ' << ib << '\n';
+            */
+
+            auto pixel_color = color{float(i) / (image_width-1), float(j) / (image_height-1), 0};
+            write_color(std::cout, pixel_color);
         }
     }
 }
@@ -71,9 +75,9 @@ using color = Vector3df;
 
 void write_color(std::ostream& out, const color& pixel_color) {
   
-    auto r = pixel_color.x();
-    auto g = pixel_color.y();
-    auto b = pixel_color.z();
+    auto r = pixel_color[0];
+    auto g = pixel_color[1];
+    auto b = pixel_color[2];
 
     // Translate the [0,1] component values to the byte range [0,255].
     int rbyte = int(255.999 * r);
@@ -119,6 +123,7 @@ void write_color(std::ostream& out, const color& pixel_color) {
 
 // Für einen Sehstrahl aus allen Objekte, dasjenige finden, das dem Augenpunkt am nächsten liegt.
 // Am besten einen Zeiger auf das Objekt zurückgeben. Wenn dieser nullptr ist, dann gibt es kein sichtbares Objekt.
+
 
 // Die rekursive raytracing-Methode. Am besten ab einer bestimmten Rekursionstiefe (z.B. als Parameter übergeben) abbrechen.
 
